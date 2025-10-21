@@ -16,7 +16,6 @@ const Copyright = styled.p`
 export default function Footer() {
   return (
     <FooterContainer>
-      <Calculator />
       <Copyright>
         &copy; 2025 Vansh Diora. All rights reserved.
       </Copyright>

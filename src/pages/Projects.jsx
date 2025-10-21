@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import Calculator from '../components/Calculator';
 
 const MainContent = styled.main`
   max-width: 1200px;
@@ -31,6 +32,11 @@ const Technologies = styled.p`
 const Description = styled.p`
   color: #666;
   line-height: 1.8;
+`;
+
+const CalculatorSection = styled.section`
+  margin-top: 60px;
+  margin-bottom: 40px;
 `;
 
 export default function Projects() {
@@ -74,9 +80,14 @@ export default function Projects() {
           <strong>Technologies:</strong> JavaScript, HTML5, CSS3, React
         </Technologies>
         <Description>
-          Built with JavaScript, HTML5 & CSS3. Now recreated in React with custom hooks for improved functionality.
+          Built with JavaScript, HTML5 & CSS3. Now recreated in React with custom hooks for improved functionality. 
+          Try it out below!
         </Description>
       </Section>
+
+      <CalculatorSection>
+        <Calculator />
+      </CalculatorSection>
     </MainContent>
   );
 }
